@@ -33,51 +33,33 @@ const day30TempC = 29;
 
 //* Then work on the conversion of the temperature from Celsius to Fahrenheit (or viceversa)
 
-const day2TempF  = (day2TempC  * 9 / 5) + 32;
-const day4TempF  = (day4TempC  * 9 / 5) + 32;
-const day6TempF  = (day6TempC  * 9 / 5) + 32;
-const day8TempF  = (day8TempC  * 9 / 5) + 32;
-const day10TempF = (day10TempC * 9 / 5) + 32;
-const day12TempF = (day12TempC * 9 / 5) + 32;
-const day14TempF = (day14TempC * 9 / 5) + 32;
-const day16TempF = (day16TempC * 9 / 5) + 32;
-const day18TempF = (day18TempC * 9 / 5) + 32;
-const day20TempF = (day20TempC * 9 / 5) + 32;
-const day22TempF = (day22TempC * 9 / 5) + 32;
-const day24TempF = (day24TempC * 9 / 5) + 32;
-const day26TempF = (day26TempC * 9 / 5) + 32;
-const day28TempF = (day28TempC * 9 / 5) + 32;
-const day30TempF = (day30TempC * 9 / 5) + 32;
 
 
 
 
 //! Start the calculation of the total temperatures
 
+const tot_temperature_in_fahrenheit = 
+  day1TempF + day3TempF + day5TempF + day7TempF + day9TempF + 
+  day11TempF + day13TempF + day15TempF + day17TempF + day19TempF +
+  day21TempF + day23TempF + day25TempF + day27TempF + day29TempF +
+  ((day2TempC * 9/5) + 32) + ((day4TempC * 9/5) + 32) + ((day6TempC * 9/5) + 32) +
+  ((day8TempC * 9/5) + 32) + ((day10TempC * 9/5) + 32) + ((day12TempC * 9/5) + 32) +
+  ((day14TempC * 9/5) + 32) + ((day16TempC * 9/5) + 32) + ((day18TempC * 9/5) + 32) +
+  ((day20TempC * 9/5) + 32) + ((day22TempC * 9/5) + 32) + ((day24TempC * 9/5) + 32) +
+  ((day26TempC * 9/5) + 32) + ((day28TempC * 9/5) + 32) + ((day30TempC * 9/5) + 32);
 
-
-const tot_temperature_in_fahrenheit = day1TempF + day2TempF+ day3TempF + day5TempF +day6TempF+ day7TempF + day8TempF+ day9TempF + day10TempF+
-day11TempF + day12TempF + day13TempF + day14TempF + day15TempF + day16TempF + day17TempF + day18TempF+ day19TempF + day20TempF+
-day21TempF + day22TempF + day23TempF + day24TempF + day25TempF + day26TempF+ day27TempF + day28TempF+ day29TempF + day30TempF;
 
 //* Then apply the conversion to calculate the total in the other unit of measurement
-const tot_temperature_in_celsius =
-  ((day1TempF - 32) * 5/9) + day2TempC +
-  ((day3TempF - 32) * 5/9) + day4TempC +
-  ((day5TempF - 32) * 5/9) + day6TempC +
-  ((day7TempF - 32) * 5/9) + day8TempC +
-  ((day9TempF - 32) * 5/9) + day10TempC +
-  ((day11TempF - 32) * 5/9) + day12TempC +
-  ((day13TempF - 32) * 5/9) + day14TempC +
-  ((day15TempF - 32) * 5/9) + day16TempC +
-  ((day17TempF - 32) * 5/9) + day18TempC +
-  ((day19TempF - 32) * 5/9) + day20TempC +
-  ((day21TempF - 32) * 5/9) + day22TempC +
-  ((day23TempF - 32) * 5/9) + day24TempC +
-  ((day25TempF - 32) * 5/9) + day26TempC +
-  ((day27TempF - 32) * 5/9) + day28TempC +
-  ((day29TempF - 32) * 5/9) + day30TempC;
-
+const tot_temperature_in_celsius = 
+  day2TempC + day4TempC + day6TempC + day8TempC + day10TempC + 
+  day12TempC + day14TempC + day16TempC + day18TempC + day20TempC +
+  day22TempC + day24TempC + day26TempC + day28TempC + day30TempC +
+  ((day1TempF - 32) * 5/9) + ((day3TempF - 32) * 5/9) + ((day5TempF - 32) * 5/9) +
+  ((day7TempF - 32) * 5/9) + ((day9TempF - 32) * 5/9) + ((day11TempF - 32) * 5/9) +
+  ((day13TempF - 32) * 5/9) + ((day15TempF - 32) * 5/9) + ((day17TempF - 32) * 5/9) +
+  ((day19TempF - 32) * 5/9) + ((day21TempF - 32) * 5/9) + ((day23TempF - 32) * 5/9) +
+  ((day25TempF - 32) * 5/9) + ((day27TempF - 32) * 5/9) + ((day29TempF - 32) * 5/9);
 
 //* Call the variables: tot_temperature_in_fahrenheit and tot_temperature_in_celsius
 
